@@ -18,14 +18,11 @@ public class Handler {
 		File to = new File(directories.to);
 		readFolder(from, folderFrom);
 		readFolder(to, folderTo);
-		System.out.println(folderFrom);
-		System.out.println(folderTo);
 		return new Data(folderFrom, folderTo);
 	}
 
 	private static void readFolder(File file, Folder folder) {
 		folder.setName(file.getAbsolutePath());
-		System.out.println(file.getAbsolutePath() + " !!!!!!!!!!");
 		File[] list = file.listFiles();
 		if (list != null) {
 			folder.setFiles(new ArrayList<String>(list.length));
@@ -44,10 +41,9 @@ public class Handler {
 
 	public static void doAction(Data data, int action) {
 		switch (action) {
-		case 1:
-			copy(data.getSource(), data.getDestination());
-		case 2:// TODO
-		case 3:// TODO
+		case 1: copy(data.getSource(), data.getDestination());
+		case 2: // TODO
+		case 3: // TODO
 		}
 	}
 

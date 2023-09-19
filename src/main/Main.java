@@ -15,5 +15,5 @@ public class Main {
 		Handler.doAction(folders, action);
 		new Scanner(System.in).close();
 	}
-
+	
 }

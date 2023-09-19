@@ -11,7 +11,6 @@ public class Enter {
 		Scanner scanner = new Scanner(System.in);
 		DIRRECTORIES.from = specifyFolder(scanner, "Укажите папку из которой нужно совершить копирование:");
 		DIRRECTORIES.to = specifyFolder(scanner, "Укажите папку в которую нужно совершить копирование:");
-		DIRRECTORIES.from = DIRRECTORIES.from.replace("D:\\Projects\\Eclipse\\Copier\\", "");
 		return Handler.process(DIRRECTORIES);
 	}
 
@@ -20,7 +19,8 @@ public class Enter {
 		do {
 			System.out.print(message);
 			input = scanner.nextLine().trim();
-		} while (input.isBlank() 
+		} while (
+				input.isBlank() 
 				|| !Files.isDirectory(Path.of(input)) 
 				|| input.equals(DIRRECTORIES.from));
 		return input;
