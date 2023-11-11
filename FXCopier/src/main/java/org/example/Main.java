@@ -1,10 +1,10 @@
-package main;
+package org.example;
 
 import java.util.Scanner;
 
-import main.com.neo.fox.logic.Data;
-import main.com.neo.fox.logic.Enter;
-import main.com.neo.fox.logic.Handler;
+import org.example.logic.Data;
+import org.example.logic.Enter;
+import org.example.logic.Handler;
 
 public class Main {
 

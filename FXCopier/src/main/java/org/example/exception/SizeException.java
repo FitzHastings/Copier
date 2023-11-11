@@ -1,4 +1,4 @@
-package main.com.neo.fox.exception;
+package org.example.exception;
 
 public class SizeException extends RuntimeException {
 

@@ -1,4 +1,4 @@
-package main.com.neo.fox.logic;
+package org.example.logic;
 
 import java.io.File;
 import java.io.IOException;

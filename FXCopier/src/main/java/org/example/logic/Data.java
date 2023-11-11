@@ -1,4 +1,4 @@
-package main.com.neo.fox.logic;
+package org.example.logic;
 
 public class Data {
 	private final Folder source;

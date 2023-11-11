@@ -1,4 +1,4 @@
-package main.com.neo.fox.logic;
+package org.example.logic;
 
 public class Directories {
 	public String from;
