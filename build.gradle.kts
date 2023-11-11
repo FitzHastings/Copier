@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("org.openjfx.javafxplugin") version "0.0.9"
 }
 
 group = "org.example"
@@ -12,6 +13,12 @@ repositories {
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+    implementation("org.openjfx:javafx:17")
+}
+
+javafx {
+    version ="20"
+    modules("javafx.controls", "javafx.fxml")
 }
 
 tasks.test {
